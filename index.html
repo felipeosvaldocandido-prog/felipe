@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Plantação Inteligente</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f7f6; color: #333; }
+        header { background-color: #2e7d32; color: white; padding: 1rem; text-align: center; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 20px; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; width: 250px; text-align: center; }
+        .card h3 { margin-top: 0; color: #2e7d32; }
+        .status { font-size: 2rem; font-weight: bold; margin: 15px 0; }
+        .normal { color: #4caf50; }
+        .alerta { color: #f44336; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Monitoramento de Cultivos v1.0</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>Setor Alfa (Soja)</h3>
+            <p>Umidade do Solo</p>
+            <div class="status normal">65%</div>
+            <p>✅ Irrigação Estável</p>
+        </div>
+
+        <div class="card">
+            <h3>Setor Beta (Milho)</h3>
+            <p>Temperatura Ambiente</p>
+            <div class="status alerta">38°C</div>
+            <p>⚠️ Alta Temperatura</p>
+        </div>
+
+        <div class="card">
+            <h3>Setor Gama (Trigo)</h3>
+            <p>Nutrientes do Solo</p>
+            <div class="status normal">Ideal</div>
+            <p>✅ Fertilização OK</p>
+        </div>
+    </div>
+
+</body>
+</html>
+Cenário 2: Página de Vendas/Apresentação de Produtos Orgânicos
+Focado em apresentar a fazenda e os produtos colhidos para o consumidor final.
+
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantações Orgânicas Terra Viva</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        .hero { background-color: #e8f5e9; padding: 60px 20px; text-align: center; }
+        .hero h1 { color: #1b5e20; font-size: 2.5rem; }
+        .produtos { max-width: 1000px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .produto-item { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; text-align: center; padding-bottom: 20px; }
+        .produto-item img { width: 100%; height: 200px; object-fit: cover; }
+        .btn-comprar { background-color: #4caf50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; text-decoration: none; }
+        .btn-comprar:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Plantações Orgânicas Terra Viva</h1>
+        <p>Do nosso solo direto para a sua mesa, cultivado com amor e sem agrotóxicos.</p>
+    </div>
+
+    <h2 style="text-align: center; color: #333; margin-top: 40px;">Nossa Colheita da Semana</h2>
+
+    <div class="produtos">
+        <div class="produto-item">
+            <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?w=500" alt="Tomates Orgânicos">
+            <h3>Tomate Cereja Orgânico</h3>
+            <p>R$ 8,50 / kg</p>
+            <button class="btn-comprar">Adicionar à Cesta</button>
+        </div>
+
+        <div class="produto-item">
+            <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500" alt="Alface Crespa">
+            <h3>Alface Crespa Hidropônica</h3>
+            <p>R$ 4,00 / Maço</p>
+            <button class="btn-comprar">Adicionar à Cesta</button>
+        </div>
+
+        <div class="produto-item">
+            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500" alt="Batatas">
+            <h3>Batata Inglesa Selecionada</h3>
+            <p>R$ 6,00 / kg</p>
+            <button class="btn-comprar">Adicionar à Cesta</button>
+        </div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Plantação</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fafafa; padding: 20px; }
+        .tabela-container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        h2 { color: #3e2723; border-bottom: 2px solid #8d6e63; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #8d6e63; color: white; }
+        tr:hover { background-color: #f5f5f5; }
+        .estacao { padding: 4px 8px; border-radius: 4px; font-size: 0.9rem; font-weight: bold; }
+        .primavera { background-color: #ffe082; color: #5d4037; }
+        .outono { background-color: #ffcc80; color: #e65100; }
+        .inverno { background-color: #bbdefb; color: #0d47a1; }
+    </style>
+</head>
+<body>
+
+<div class="tabela-container">
+    <h2>Cronograma de Cultivo e Rotação</h2>
+    <p>Utilize esta tabela para gerenciar as épocas de semeadura e colheita da fazenda.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cultura</th>
+                <th>Época de Plantio</th>
+                <th>Tempo até a Colheita</th>
+                <th>Tipo de Solo ideal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Milho</td>
+                <td><span class="estacao primavera">Primavera</span></td>
+                <td>110 - 130 dias</td>
+                <td>Rico em matéria orgânica</td>
+            </tr>
+            <tr>
+                <td>Feijão</td>
+                <td><span class="estacao outono">Outono</span></td>
+                <td>75 - 90 dias</td>
+                <td>Lomoso e bem drenado</td>
+            </tr>
+            <tr>
+                <td>Cevada</td>
+                <td><span class="estacao inverno">Inverno</span></td>
+                <td>120 dias</td>
+                <td>Argilo-arenoso</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+Como testar estes códigos?
+Copie qualquer um dos blocos de código acima.
+
+Abra o Bloco de Notas (ou um editor como VS Code) e cole o código.
+
+Salve o arqui
+
+vo com o nome que desejar, mas lembre-se de usar a extensão .html no final (exemplo: dashboard.html).
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frota de Máquinas Agrícolas</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px; }
+        .grid-maquinas { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .maquina-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 5px solid #ff9800; }
+        .maquina-info { padding: 20px; }
+        .maquina-info h3 { margin: 0 0 10px 0; color: #334155; }
+        .tag { display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
+        .disponivel { background-color: #d1fae5; color: #065f46; }
+        .manutencao { background-color: #fee2e2; color: #991b1b; }
+        .detalhes { margin-top: 15px; font-size: 0.9rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; color: #1e293b; margin-bottom: 30px;">Gerenciamento de Máquinas e Equipamentos</h1>
+
+    <div class="grid-maquinas">
+        <div class="maquina-card" style="border-top-color: #2b6cb0;">
+            <div class="maquina-info">
+                <span class="tag disponivel">● Operacional</span>
+                <h3>Trator John Deere 6115J</h3>
+                <p>Utilização: Preparo do solo e tração de implementos.</p>
+                <div class="detalhes">
+                    <strong>Última Revisão:</strong> 12/05/2026<br>
+                    <strong>Próxima Troca de Óleo:</strong> 250 horas de uso
+                </div>
+            </div>
+        </div>
+
+        <div class="maquina-card" style="border-top-color: #c53030;">
+            <div class="maquina-info">
+                <span class="tag manutencao">🛠️ Em Manutenção</span>
+                <h3>Colheitadeira Case IH 7120</h3>
+                <p>Utilização: Colheita de grãos (Soja/Milho).</p>
+                <div class="detalhes">
+                    <strong>Problema:</strong> Substituição das facas do picador.<br>
+                    <strong>Previsão de Retorno:</strong> Amanhã
+                </div>
+            </div>
+        </div>
+
+        <div class="maquina-card" style="border-top-color: #2b6cb0;">
+            <div class="maquina-info">
+                <span class="tag disponivel">● Operacional</span>
+                <h3>Pulverizador Jacto Uniport</h3>
+                <p>Utilização: Aplicação de defensivos e fertilizantes líquidos.</p>
+                <div class="detalhes">
+                    <strong>Última Revisão:</strong> 01/06/2026<br>
+                    <strong>Status dos Bicos:</strong> Calibrados e limpos
+                </div>
+            </div>
+        </div>
+        <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe de Agricultores</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9fbf9; color: #2e3d30; margin: 0; padding: 40px 20px; }
+        .titulo { text-align: center; max-width: 600px; margin: 0 auto 40px auto; }
+        .titulo h1 { color: #1b5e20; }
+        .equipe-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .avatar-card { background: white; border: 1px solid #e0e6e0; border-radius: 50% 50% 12px 12px; width: 220px; text-align: center; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+        .foto-perfil { width: 100px; height: 100px; background-color: #a5d6a7; border-radius: 50%; margin: 0 auto 15px auto; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; }
+        .cargo { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 10px; }
+        .contato-btn { display: inline-block; margin-top: 10px; padding: 6px 12px; background-color: #1b5e20; color: white; border-radius: 4px; text-decoration: none; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>Nossos Agricultores e Especialistas</h1>
+        <p>A força humana que faz a terra prosperar todos os dias com técnica, respeito e dedicação.</p>
+    </div>
+
+    <div class="equipe-container">
+        <div class="avatar-card">
+            <div class="foto-perfil">👨‍🌾</div>
+            <h3>Seu Francisco</h3>
+            <div class="cargo">Mestre de Campo</div>
+            <p>Mais de 20 anos de experiência no manejo de solo e plantio direto.</p>
+            <a href="#" class="contato-btn">Chamar no Rádio</a>
+        </div>
+
+        <div class="avatar-card">
+            <div class="foto-perfil">👩‍🔬</div>
+            <h3>Dra. Amanda</h3>
+            <div class="cargo">Engenheira Agrônoma</div>
+            <p>Responsável pelo controle de pragas, nutrição e análise das safras.</p>
+            <a href="#" class="contato-btn">Ver Relatórios</a>
+        </div>
+
+        <div class="avatar-card">
+            <div class="foto-perfil">🚜</div>
+            <h3>Carlos Henrique</h3>
+            <div class="cargo">Operador de Máquinas</div>
+            <p>Especialista na operação e mapeamento via GPS das colheitadeiras.</p>
+            <a href="#" class="contato-btn">Chamar no Rádio</a>
+        </div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Animais</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f7f3f0; margin: 0; padding: 20px; }
+        .painel-animais { max-width: 900px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .cabecalho-animais { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d7ccc8; padding-bottom: 15px; }
+        .lista-rebanho { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+        .item-animal { display: flex; align-items: center; justify-content: space-between; padding: 15px; background: #efebe9; border-radius: 8px; }
+        .info-grupo { display: flex; align-items: center; gap: 15px; }
+        .icone-animal { font-size: 2rem; background: white; padding: 8px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .quantidade { font-size: 1.2rem; font-weight: bold; color: #4e342e; }
+    </style>
+</head>
+<body>
+
+<div class="painel-animais">
+    <div class="cabecalho-animais">
+        <div>
+            <h2 style="margin: 0; color: #4e342e;">Controle de Animais e Pastagens</h2>
+            <p style="margin: 5px 0 0 0; color: #8d6e63;">Integração Lavoura-Pecuária (ILP)</p>
+        </div>
+        <button style="background: #5d4037; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">+ Registrar Lote</button>
+    </div>
+
+    <div class="lista-rebanho">
+        <div class="item-animal">
+            <div class="info-grupo">
+                <div class="icone-animal">🐄</div>
+                <div>
+                    <h4 style="margin: 0; font-size: 1.1rem;">Gado de Corte (Nelore)</h4>
+                    <p style="margin: 3px 0 0 0; font-size: 0.85rem; color: #757575;">Localização: Piquete Norte (Pasto Resteva de Milho)</p>
+                </div>
+            </div>
+            <div class="quantidade">142 Cabeças</div>
+        </div>
+
+        <div class="item-animal">
+            <div class="info-grupo">
+                <div class="icone-animal">🐑</div>
+                <div>
+                    <h4 style="margin: 0; font-size: 1.1rem;">Ovinos (Santa Inês)</h4>
+                    <p style="margin: 3px 0 0 0; font-size: 0.85rem; color: #757575;">Localização: Aprisco Central / Piquete 03</p>
+                </div>
+            </div>
+            <div class="quantidade">68 Cabeças</div>
+        </div>
+
+        <div class="item-animal">
+            <div class="info-grupo">
+                <div class="icone-animal">🐓</div>
+                <div>
+                    <h4 style="margin: 0; font-size: 1.1rem;">Aves (Galpão de Postura)</h4>
+                    <p style="margin: 3px 0 0 0; font-size: 0.85rem; color: #757575;">Status: Coleta automatizada ativa</p>
+                </div>
+            </div>
+            <div class="quantidade">450 Aves</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
